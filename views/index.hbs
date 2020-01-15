@@ -2,16 +2,72 @@
 <html lang="pt">
 <head>
     <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
     <link rel='stylesheet' href='/stylesheets/bootstrap.css'/>
-    <script src='javascripts/jquery.min.js'></script>
+    <script src='javascripts/jquery.js'></script>
     <script src='javascripts/popper.js'></script>
     <script src='javascripts/bootstrap.js'></script>
 
 
 </head>
 <body>
-<h1 class="display-3">Teste</h1>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light navbar-expand-sm">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo.png" width="30" height="30" alt="logo" class="d-inline-block align-top">
+                Diário
+            </a>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="row container-fluid">
+                    <div class="col-7 text-left">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Downloads</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-5 text-right">
+                            <button class="btn btn-sm btn-outline-primary" type="button">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-6">
+                <div class="jumbotron margin-s">
+                    <h1 class="display-4">Para você</h1>
+                    <p class="lead">Com anotações diárias você irá aprender muito com você mesmo, além de te ajudar a lembrar
+                    momentos que você quer que sejam lembrados por você e somente para você.</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <form>
+                    <div class="form-group margin-s">
+                        <label>Email</label>
+                        <input type="email" class="form-control" id="emailIndex">
+                    </div>
+                    <div class="form-group margin-s">
+                        <label>Senha</label>
+                        <input type="password" class="form-control" id="passwordIndex" aria-describedby="passwordLength">
+                        <small id="passwordLength" class="form-text text-muted">A senha deve ter no máximo 32 caracteres</small>
+                    </div>
+                    <div class="form-group margin-s">
+                        <button type="submit" class="btn btn-success btn-block">Cadastrar</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 </html>
